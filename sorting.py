@@ -76,21 +76,6 @@ nums = [1,4,3,5,6,2,9,7]
 # print(list1)
 # print(quicksort(list1))
 
-def color_sort(arr):
-    mid = len(arr)//2
-    left = 0
-    right = len(arr)-1
-    for i in range(len(arr)):
-        if arr[i] == "r":
-            arr.insert(left,arr.pop(i))
-        elif arr[i] == "g":
-            arr.insert(mid,arr.pop(i))
-        else:
-            arr.insert(right,arr.pop(i))
-    return arr
-arr = ["r", "g" ,"b", "r", "g", "b"]
-print(color_sort(arr))
-
 
 # quicksort hoare method
 # def swap(a,b,arr):
